@@ -90,7 +90,7 @@ input   {
 
 @media screen and (max-width: 1024px) {
     .app-container  {
-        flex-basis: 100%; !important
+        flex-basis: 100%;
     }
 }
 
