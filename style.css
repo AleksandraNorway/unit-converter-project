@@ -49,7 +49,15 @@ h3  {
     text-align: center;
 }
 
+.app-desc > p > span   {
+    color: #585DFE;
+    line-height: 2.375rem;
+    text-decoration: underline;
+}
 
+.app-desc > p > span:hover  {
+    color: #FB3796;
+}
 
 .bod    {
     padding: 5%;
@@ -67,6 +75,7 @@ h3  {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 }
 
 .app-input-section    {
@@ -76,20 +85,7 @@ h3  {
     top: 0px; */
     padding: 3.32rem 3.18rem;
     border-radius: 1.5% 1.5% 0px 0px;
-    background-image: linear-gradient(
-        45deg,
-        hsl(238deg 99% 67%) 0%,
-        hsl(256deg 89% 65%) 11%,
-        hsl(270deg 79% 61%) 22%,
-        hsl(283deg 71% 58%) 33%,
-        hsl(295deg 63% 54%) 44%,
-        hsl(306deg 66% 53%) 56%,
-        hsl(314deg 75% 55%) 67%,
-        hsl(320deg 84% 56%) 78%,
-        hsl(326deg 91% 58%) 89%,
-        hsl(331deg 96% 60%) 100%
-    );
-
+    background: linear-gradient(246.26deg, #585DFE 0%, #FB3796 100%)
 }
 
 .app-results-section    {
