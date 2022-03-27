@@ -1,18 +1,44 @@
 :root   {
     --bg-color: #1C1C1C;
-    --result-section-color: #FBF7EE;
+    --result-section-color: #1F2937;
     --heads-color: #fff;
     --txt-color: #D2D2D2;
+    --result-heads-color: #fff;
+    --result-txts-color: #D2D2D2;
+    --container-color: #525252;
+}
+.light-theme {
+    --bg-color: #ffffff;
+    --result-section-color: #FBF7EE;
+    --heads-color: #1A1921;
+    --txt-color: #4E4E4E;
     --result-heads-color: #1A1921;
     --result-txts-color: #4E4E4E;
+    --container-color: #fff;
 }
 
+.darky-container    {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
 
+#icon   {
+    width: 30px;
+    cursor: pointer;
+}
+
+.darky-container > div > p    {
+    cursor: pointer;
+    opacity: 50%;
+    color: var(--txt-color);
+}
 
 html, body {
     font-family: 'Inter', sans-serif;
-    background-color: #1C1C1C;
-    color: white;
+    background-color: var(--bg-color);
+    color: var(--heads-color);
     font-size: 16px;
     margin: 0;
     padding: 0;
@@ -21,7 +47,7 @@ html, body {
 /* Typography styling */
 p,
 li  {
-    color: #D2D2D2;
+    color: var(--txt-color);
     line-height: 1.25rem;
 }
 
@@ -37,6 +63,7 @@ h3  {
 
 .app-input-section > h3   {
     text-align: center;
+    color: #fff;
 }
 
 .app-input-section > h1   {
@@ -47,14 +74,14 @@ h3  {
 }
 
 .conversion-results .result-type    {
-    color: #1A1921;
+    color: var(--result-heads-color);
     font-size: 0.875rem;
     line-height: 1.25rem;
     text-align: center;
 }
 
 .conversion-results > p {
-    color: #4E4E4E;
+    color: var(--result-txts-color);
     font-size: 0.875rem;
     line-height: 1.25rem;
     text-align: center;
@@ -92,7 +119,7 @@ input   {
 }
 
 .app-container  {
-    background-color: white;
+    background-color: var(--container-color);
     border-radius: 1.5%;
     padding: 5px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
@@ -118,9 +145,10 @@ input   {
     background: linear-gradient(246.26deg, #585DFE 0%, #FB3796 100%)
 }
 
+
 .app-results-section    {
     margin: 0px;
-    background-color: #FBF7EE;
+    background-color: var(--result-section-color);
     border-radius: 0% 0% 1.5% 1.5%;
 }
 

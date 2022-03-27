@@ -21,3 +21,14 @@ document.getElementById("pound-result-2").textContent = poundResult.toFixed(3);
 document.getElementById("user-input-5").textContent = userInput;
 document.getElementById("user-input-6").textContent = userInput;
 }
+
+
+var icon = document.getElementById("icon");
+icon.onclick = function()   {
+    document.body.classList.toggle("light-theme");
+    if(document.body.classList.contains("light-theme")){
+        icon.src = "./image/moon.png";
+    } else  {
+        icon.src = "./image/sun.png";
+    }
+}
