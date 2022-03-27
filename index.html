@@ -11,21 +11,42 @@
     <title>Unit Converter Project</title>
 </head>
 <body>
-    <div class="app-container"> <!-- flex container -->
-        <div class="app-desc"> <!--flex item-->
-            <h1>Unit Converter Project</h1>
-            <p class="desc-text">A solo project created as part of my front-end dev course on Scrimba.</p>
-            <h3>Project features:</h3>
-            <ul>
-                <li>Automatically performs metric/imperial unit conversions</li>
-                <li>Converts Meters to Feet</li>
-                <li>Converts Litres to Gallons</li>
-                <li>Converts Kilograms to Pounds</li>
-            </ul>
-            <p><em>Developed by Obinna Osisiogu</em></p>
-        </div>
-        <div class="app"> <!-- flex item -->
-            
+    <div class="bod">
+        <div class="app-desc-container"> <!-- flex container -->
+            <div class="app-desc"> <!--flex item-->
+                <h1>Unit Converter Project</h1>
+                <p class="desc-text">A solo project created as part of my front-end dev course on Scrimba.</p>
+                <h3>Project features:</h3>
+                <ul>
+                    <li>Automatically performs metric/imperial unit conversions</li>
+                    <li>Converts Meters to Feet</li>
+                    <li>Converts Litres to Gallons</li>
+                    <li>Converts Kilograms to Pounds</li>
+                </ul>
+                <p><em>Developed by Obinna Osisiogu</em></p>
+            </div>
+            <div class="app-container"> <!-- flex item -->
+                <div class="app-input-section">
+                    <h3>Metric/Imperial unit conversion</h3>
+                    <h1>20</h1>     
+                </div>
+                <div class="app-results-section">
+                    <div class="app-results-container">
+                        <div class="conversion-results length">
+                            <p class="result-type"><strong>Length (Meter/Feet)</strong></p>
+                            <p><span>0</span> meters = <span>0.000</span> feet | <span>0</span> feet = <span>0.000</span> meters</p>
+                        </div>
+                        <div class="conversion-results volume">
+                            <p class="result-type"><strong>Volume (Liters/Gallons)</strong></p>
+                            <p><span>0</span> meters = <span>0.000</span> feet | <span>0</span> feet = <span>0.000</span> meters</p>
+                        </div>
+                        <div class="conversion-results mass">
+                            <p class="result-type"><strong>Mass (Kilograms/Pounds)</strong></p>
+                            <p><span>0</span> meters = <span>0.000</span> feet | <span>0</span> feet = <span>0.000</span> meters</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script src="index.js"></script>
