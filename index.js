@@ -1,4 +1,5 @@
 
+// metric conversion app
 const oneFoot = 3.28084
 const oneGallon = 0.264172
 const onePound = 2.20462
@@ -22,7 +23,7 @@ document.getElementById("user-input-5").textContent = userInput;
 document.getElementById("user-input-6").textContent = userInput;
 }
 
-
+// light and dark theme setup
 var icon = document.getElementById("icon");
 icon.onclick = function()   {
     document.body.classList.toggle("light-theme");
